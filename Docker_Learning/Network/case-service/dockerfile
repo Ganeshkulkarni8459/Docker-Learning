@@ -1,0 +1,7 @@
+FROM openjdk:24-jdk-slim
+
+WORKDIR /app
+
+COPY target/case-service-0.0.1-SNAPSHOT.jar case-service.jar
+
+CMD ["java", "-jar", "case-service.jar"]

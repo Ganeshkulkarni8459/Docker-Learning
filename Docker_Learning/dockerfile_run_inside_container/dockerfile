@@ -1,0 +1,19 @@
+# Base Image
+FROM ubuntu:latest
+
+#Install jdk-17
+Run apt update
+RUN apt install -y openjdk-17-jdk 
+
+RUN apt install -y git 
+
+RUN apt install -y maven
+
+#Set Container Run Time Path
+WORKDIR /app
+
+#Copy Jar from Windows system to ubuntu > /app
+COPY api-gateway-0.0.1-SNAPSHOT.jar /app/api-gateway-0.0.1-SNAPSHOT.jar
+
+#Run java -jar /app/api-gateway-0.0.1-SNAPSHOT.jar
+CMD ["java","-jar","api-gateway-0.0.1-SNAPSHOT.jar"]

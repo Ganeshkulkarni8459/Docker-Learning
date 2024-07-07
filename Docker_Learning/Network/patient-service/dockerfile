@@ -1,0 +1,7 @@
+FROM openjdk:24-jdk-slim
+
+WORKDIR /app
+
+COPY target/patient-service-0.0.1-SNAPSHOT.jar patient-service.jar
+
+CMD ["java", "-jar", "patient-service.jar"]

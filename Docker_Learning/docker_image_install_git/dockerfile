@@ -1,0 +1,13 @@
+# Base Image
+FROM ubuntu:latest
+# Update package list
+RUN apt update 
+
+# Install necessary packages, including Git
+RUN apt install -y git 
+
+# Set Container Run Time Path
+WORKDIR /app
+
+# Default command
+CMD ["bash"]

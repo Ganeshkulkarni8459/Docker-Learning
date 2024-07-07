@@ -1,0 +1,5 @@
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD=Test@123
+
+ENV MYSQL_DATABASE=auth_service_db
