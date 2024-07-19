@@ -1,0 +1,19 @@
+# Use a base image (replace with your application's base image)
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install -y openjdk-17-jdk
+
+# Create directory for secure credentials and create a dummy file (replace with your secure creds setup)
+RUN mkdir /secure
+RUN echo "DefaultCredentials@123" > /secure/creds
+
+
+# Copy your application files
+COPY hello-service/target/hello-world-0.0.1-SNAPSHOT.jar /app/hello-service.jar
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Command to execute when the container starts
+CMD ["/entrypoint.sh"]

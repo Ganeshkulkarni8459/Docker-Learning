@@ -1,0 +1,11 @@
+org\dnyanyog\dto\AppointmentData.class
+org\dnyanyog\entity\Appointment.class
+org\dnyanyog\dto\AppointmentResponse.class
+org\dnyanyog\AppointmentServiceMain.class
+org\dnyanyog\dto\AppointmentRequest.class
+org\dnyanyog\common\ResponseCode.class
+org\dnyanyog\controller\AppointmentServiceController.class
+org\dnyanyog\entity\Appointment$Status.class
+org\dnyanyog\service\AppointmentServiceImp.class
+org\dnyanyog\repo\AppointmentServiceRepository.class
+org\dnyanyog\service\AppointmentService.class

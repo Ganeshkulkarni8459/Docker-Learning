@@ -1,0 +1,11 @@
+org\dnyanyog\dto\PatientData.class
+org\dnyanyog\services\PatientManagementServiceImp.class
+org\dnyanyog\entity\Patients$Status.class
+org\dnyanyog\dto\PatientResponse.class
+org\dnyanyog\controller\PatientManagementController.class
+org\dnyanyog\repo\PatientsRepository.class
+org\dnyanyog\services\PatientManagementService.class
+org\dnyanyog\dto\PatientRequest.class
+org\dnyanyog\PatientApplicationMain.class
+org\dnyanyog\entity\Patients.class
+org\dnyanyog\common\ResponseCode.class
